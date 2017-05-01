@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app="parksApp">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ron Swanson</title>
+  <link rel="stylesheet" href="swanson.css">
+</head>
+
+<body ng-controller="parksCtrl">
+  <div class="something">
+    <img class="word" src="ronny.png" alt="">
+    <div class="ron">
+      {{quotes}}
+    </div>
+  </div>
+  <div class="box rotate">
+  <img class="scotch" src="lagavulin.png" alt="" ng-click="getNextQuote()">
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+<script src="parksApp.js" charset="utf-8"></script>
+<script src="parksCtrl.js" charset="utf-8"></script>
+<script src="parkService.js" charset="utf-8"></script>
+
+</html>

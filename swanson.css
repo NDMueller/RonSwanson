@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Salsa');
+body {
+	background-image: url('RonSwanson.jpg');
+	background-size: cover;
+  background-repeat: no-repeat;
+	height: 100vh;
+}
+.wrapper{
+  position: relative;
+}
+.something{
+  position:absolute;
+  top:0;
+  left:0;
+  width:50vw;
+}
+.word{
+  -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+        filter: FlipH;
+        -ms-filter: "FlipH";
+        height:27vw;
+        width:50vw;
+        position:relative;
+        top:0;
+}
+.ron{
+  font-family:Salsa;
+  font-size: 20px;
+  color:black;
+  /*text-shadow: 2px 2px white;*/
+  position: absolute;
+  top:40%;
+  left:50%;
+  transform:translate(-50%,-50%);
+
+  text-align: center;
+  width: 75%;
+  box-sizing: border-box;
+  overflow-wrap:break-word;
+}
+@keyframes spin {
+	0%   {transform: rotate(0deg);}
+ 50%  {transform: rotate(180deg);}
+ 100% {transform: rotate(360deg);}
+
+}
+.scotch{
+  height:30vh;
+  position: fixed;
+  bottom:10vh;
+  left:25vw;
+	animation-name: spin;
+  animation-duration: 1s;
+	transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
