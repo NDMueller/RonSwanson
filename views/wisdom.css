@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Permanent+Marker');
+@import url('https://fonts.googleapis.com/css?family=Londrina+Solid');
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.wisdomWrapper{
+  background-image: url('../img/giphy.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.flexcontainer{
+display: -webkit-flex;
+ display: flex;
+ -webkit-flex-direction: column;
+ flex-direction: column;
+ -webkit-align-items: flex-end;
+ align-items: flex-end;
+ font-size: 50px;
+ color:white;
+ text-shadow: 0 0 20px black;
+}
+.flexcontainer > ul {
+  margin: 0;
+  padding-right: 20px;
+  z-index: 100;
+  font-family: 'Permanent Marker';
+}
+.ron {
+  color:white;
+  font-family:Londrina Solid;
+  font-size: 45px;
+  text-shadow: 1px 1px 10px black;
+  position: absolute;
+  top:40%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align: center;
+  width: 75%;
+  box-sizing: border-box;
+  overflow-wrap:break-word;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.scotch {
+  height: 30vh;
+  position: fixed;
+  bottom: 10vh;
+  left: 15vw;
+  animation-name: spin;
+  animation-duration: 1s;
+  transition-timing-function: ease;
+  transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}

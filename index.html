@@ -3,25 +3,23 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Ron Swanson</title>
-  <link rel="stylesheet" href="swanson.css">
+  <link rel="stylesheet" href="views/homepage.css">
+  <link rel="stylesheet" href="views/wisdom.css">
+  <link rel="stylesheet" href="views/cal.css">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans|Raleway" rel="stylesheet">
+  <title></title>
 </head>
 
 <body ng-controller="parksCtrl">
-  <div class="something">
-    <img class="word" src="ronny.png" alt="">
-    <div class="ron">
-      {{quotes}}
-    </div>
-  </div>
-  <div class="box rotate">
-  <img class="scotch" src="lagavulin.png" alt="" ng-click="getNextQuote()">
-</div>
+
+
+<!-- Routes go in Ui-View -->
+  <ui-view></ui-view>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
-<script src="parksApp.js" charset="utf-8"></script>
-<script src="parksCtrl.js" charset="utf-8"></script>
-<script src="parkService.js" charset="utf-8"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0/angular-ui-router.js"></script>
+<script src="JS/parksApp.js" charset="utf-8"></script>
+<script src="JS/parksCtrl.js" charset="utf-8"></script>
+<script src="JS/parkService.js" charset="utf-8"></script>
 </html>
