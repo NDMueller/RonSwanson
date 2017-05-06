@@ -21,6 +21,10 @@ angular.module('parksApp',['ui.router'])
               url:'/about',
               templateUrl:'./views/about.html'
             })
+            .state('reserve',{
+              url:'/reserve',
+              templateUrl:'./views/reserve.html'
+            })
         $urlRouterProvider
             .otherwise('/');
           });
