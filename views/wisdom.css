@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Permanent+Marker');
-@import url('https://fonts.googleapis.com/css?family=Londrina+Solid');
+@import url('https://fonts.googleapis.com/css?family=Teko');
 .wisdomWrapper{
   background-image: url('../img/giphy.gif');
   background-repeat: no-repeat;
@@ -14,8 +14,8 @@ display: -webkit-flex;
  -webkit-align-items: flex-end;
  align-items: flex-end;
  font-size: 50px;
- color:white;
- text-shadow: 0 0 20px black;
+ color:#6EB257;
+ text-shadow: 0 0 10px #26413C;
 }
 .flexcontainer > ul {
   margin: 0;
@@ -25,8 +25,8 @@ display: -webkit-flex;
 }
 .ron {
   color:white;
-  font-family:Londrina Solid;
-  font-size: 40px;
+  font-family:Teko;
+  font-size: 8vh;
   text-shadow: 1px 1px 10px black;
   position: absolute;
   top:40%;

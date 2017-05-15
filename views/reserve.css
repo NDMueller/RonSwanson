@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+@import url('https://fonts.googleapis.com/css?family=Teko');
 .bodywrapper2{
   background:
   url('../img/park.jpg');
@@ -12,7 +12,7 @@
   flex-wrap: wrap;
 }
 .bodywrapper{
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  font-family: "Teko";
   font-weight: 100;
   font-size: 12px;
   line-height: 30px;
